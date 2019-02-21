@@ -1,3 +1,40 @@
+# My App
+
+#### , date
+
+
+#### By Katrina Hockman
+
+## Description
+
+
+
+## Known Bugs
+
+
+## Setup/Installation Requirements
+
+* Clone repository
+* Run npm install from terminal
+
+
+## Technologies Used
+
+Javascript, webpack's, CSS,React
+
+### License
+
+This software is licensed under the MIT license.
+
+Copyright (c) 2019 **Katrina Hockman**
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
