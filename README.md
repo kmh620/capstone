@@ -1,12 +1,28 @@
-# My App
+# Capstone Project
 
-#### , date
+#### App for artists/creators to record information about their projects. 
+#### 03/01/2019
 
 
 #### By Katrina Hockman
 
 ## Description
 
+### MVP: 
+* App Homepage with about info, login page
+* User page to add/view/edit projects
+* Separate forms for each category type (painting, sculpture, other) 
+* Pricing suggestion based on materials cost per piece, time spent on project, set base price, etc
+* Finished project portfolio view (May be moved to additional features)
+
+### Tools:
+ React and Redux will be used. I am looking for an API from a supplies brand or store that could be integrated into a search option in the project form. 
+
+### Additional Features:
+• More categories & forms (Photography, crafts, video, performance, etc)
+• Mobile app option to take pictures of receipts, scan QR codes/ barcodes of products
+• Connect with other users for collaborations, etc.
+• Recording buyer information/ selling platforms
 
 
 ## Known Bugs
