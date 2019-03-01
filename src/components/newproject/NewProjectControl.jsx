@@ -1,14 +1,28 @@
-import React from 'react';
+/*import React from 'react';
 
-function NewProjectControl() {
+
+class NewProjectControl extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      project: null
+    };
+    
+  }
+
+  render(){
   
-  return(
-    <div>
-      <h1>New Project Control</h1>
-    </div>
-  );
-  
-  
+    /* let renderForm =null;
+    if project = paint, renderForm = PaintForm //
+    
+    
+    return (
+      <div>
+        {renderForm}
+      </div>
+    );
+  }
 }
 
-export default NewProjectControl;
+export default NewProjectControl; */
