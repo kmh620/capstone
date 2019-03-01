@@ -15,6 +15,9 @@
 * Pricing suggestion based on materials cost per piece, time spent on project, set base price, etc
 * Finished project portfolio view (May be moved to additional features)
 
+#### MVP Component Tree:
+![alt text](src/assets/img/CapstoneMVPComponents.png "MVP Components")
+
 ### Tools:
  React and Redux will be used. I am looking for an API from a supplies brand or store that could be integrated into a search option in the project form. 
 
