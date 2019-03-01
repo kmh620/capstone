@@ -20,3 +20,5 @@
 
 * add swatches to painting info 
 
+* [Video: Create login/register page](https://www.youtube.com/watch?v=OWYxMCfcTbY)
+

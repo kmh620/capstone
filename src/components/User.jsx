@@ -11,7 +11,6 @@ function User(){
     <div>
       <ProjectTypeList/>
       <SeriesList/>
-    
     </div>
   );
 }

@@ -8,10 +8,10 @@ function OtherForm(){
 
   function handleOtherFormSubmission(event) {
     event.preventDefault();
-    _title.value = ''
-    _medium.value = ''
-    _notes.value = ''
-    _dimensions.value = ''
+    _title.value = '';
+    _medium.value = '';
+    _notes.value = '';
+    _dimensions.value = '';
   }
 
   return (
@@ -27,11 +27,11 @@ function OtherForm(){
           id='medium'
           placeholder='Location'
           ref={(input) => {_medium = input;}}/>
-          <input
-            type='text'
-            id='dimensions'
-            placeholder='HxLxW'
-            ref={(input) => {_dimensions = input;}}/>
+        <input
+          type='text'
+          id='dimensions'
+          placeholder='HxLxW'
+          ref={(input) => {_dimensions = input;}}/>
         <textarea
           id='notes'
           placeholder='Notes'
