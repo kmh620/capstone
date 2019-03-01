@@ -8,3 +8,15 @@
 
 * [About Art-Journals, Incorporate into About Section](https://mixedmedia.club/what-is-an-art-journal/)
 
+* [React-router video- Watch later!!](https://www.youtube.com/watch?v=91F8reC8kvo)
+
+* [Art inventory](https://www.artworkarchive.com/blog/6-simple-steps-to-knock-out-your-art-inventory-project)
+
+* reference photos?
+* Main image and detail image option/history images
+* Autofill form for series?
+
+* [Video: art supply inventory- for pricing component?](https://www.youtube.com/watch?v=IooOXXAa3DU)
+
+* add swatches to painting info 
+
