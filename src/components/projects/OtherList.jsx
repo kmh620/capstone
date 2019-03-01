@@ -3,23 +3,18 @@ import Other from './Other';
 
 var otherList = [
   {
-    title: '',
-    medium: '',
-    notes: ''
+    title: 'Blanket',
+    medium: 'yarn',
+    notes: ['this is gonna be soo warm', 'Ask Grandma for help']
   },
   {
-    title: '',
-    medium: '',
-    notes: ''
-  },
-  {
-    title: '',
-    medium: '',
-    notes: ''
+    title: 'Photo 1',
+    medium: 'Photography',
+    notes: []
   }
 ];
 
-function PaintList(){
+function OtherList(){
   return (
     <div>
       <hr/>
@@ -33,4 +28,4 @@ function PaintList(){
   );
 }
 
-export default PaintList;
+export default OtherList;

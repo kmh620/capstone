@@ -3,19 +3,19 @@ import Painting from './Painting';
 
 var paintingList = [
   {
-    title: '',
-    medium: '',
-    notes: ''
+    title: 'Untitled 1',
+    medium: 'Acrylic on paper',
+    notes: ['Add piece to Series A ??']
   },
   {
-    title: '',
-    medium: '',
-    notes: ''
+    title: 'Painting of dogs',
+    medium: 'Oil on canvas',
+    notes: ['Cute dogs, get more dogs!', 'Ran out of blue paint...']
   },
   {
-    title: '',
-    medium: '',
-    notes: ''
+    title: 'Another painting',
+    medium: 'Watercolor',
+    notes: ['Too wet, don\'t use so much water next time!', 'Add a dog to this piece?']
   }
 ];
 

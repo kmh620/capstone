@@ -3,19 +3,19 @@ import Sculpture from './Sculpture';
 
 var sculptureList = [
   {
-    title: '',
-    medium: '',
-    notes: ''
+    title: 'Dogs',
+    medium: 'Wood',
+    notes: ['Got a splinter today :(']
   },
   {
-    title: '',
-    medium: '',
-    notes: ''
+    title: 'Untitled 1',
+    medium: 'Found objects',
+    notes: ['Potential buyer: Grandma', 'Add more dogs by tuesday!']
   },
   {
-    title: '',
-    medium: '',
-    notes: ''
+    title: 'Large Dog 12',
+    medium: 'Iron',
+    notes: ['Find welder!']
   }
 ];
 
