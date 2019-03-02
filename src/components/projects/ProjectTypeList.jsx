@@ -1,6 +1,5 @@
 
 import React from 'react';
-
 import PaintList from './PaintList';
 import SculptureList from './SculptureList';
 import OtherList from './OtherList';
@@ -13,7 +12,6 @@ function ProjectTypeList(){
       <div>
         <h2>painting</h2>
         <PaintList/>
-    
       </div>
       
       <div>
