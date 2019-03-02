@@ -19,13 +19,19 @@
 ![alt text](src/assets/img/CapstoneMVPComponents.png "MVP Components")
 
 ### Tools:
- React and Redux will be used. I am looking for an API from a supplies brand or store that could be integrated into a search option in the project form. 
+ React and Redux will be used.
 
 ### Additional Features:
 • More categories & forms (Photography, crafts, video, performance, etc)
 • Mobile app option to take pictures of receipts, scan QR codes/ barcodes of products
 • Connect with other users for collaborations, etc.
 • Recording buyer information/ selling platforms
+• API ? (supplies brand or store that could be integrated into a search option in the project form.)
+
+#### UI State
+ * Material UI components for menus, hide& show information
+ * Projects will have 'complete' status boolean
+ 
 
 
 ## Known Bugs

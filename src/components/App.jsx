@@ -15,6 +15,10 @@ import { Switch, Route } from 'react-router-dom';
 
 function App() {
   
+  handleAddingNewProject(){
+  
+}
+  
   return (
     <div>
     <Header/>
@@ -25,7 +29,7 @@ function App() {
         <Route path='/painting-projects' component={PaintList} />
         <Route path='/sculpture-projects' component={SculptureList} />
         <Route path='/other-form' component={OtherForm} />
-        <Route path='/painting-form' component={PaintForm} />
+        <Route path='/painting-form' render={()=><PaintForm onNewPaintingCreation={this.handleAddingNewProject} />} />
         <Route path='/sculpture-form' component={SculptureForm} />
       </Switch>
     </div>

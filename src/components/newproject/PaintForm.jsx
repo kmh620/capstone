@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function PaintForm(){
+function PaintForm(props){
   let _title = null;
   let _medium = null;
   let _notes = null;
@@ -8,6 +9,7 @@ function PaintForm(){
 
   function handlePaintFormSubmission(event) {
     event.preventDefault();
+    props.onNewPaintingCreation({title: _title.value, medium: _medium.value, notes: _notes.value, dimensions: _dimensions.value});
     _title.value = '';
     _medium.value = '';
     _notes.value = '';
@@ -25,7 +27,7 @@ function PaintForm(){
         <input
           type='text'
           id='medium'
-          placeholder='Location'
+          placeholder='Medium'
           ref={(input) => {_medium = input;}}/>
         <input
           type='text'
@@ -41,5 +43,9 @@ function PaintForm(){
     </div>
   );
 }
+
+PaintForm.propTypes = {
+  onNewPaintingCreation: PropTypes.func
+};
 
 export default PaintForm;

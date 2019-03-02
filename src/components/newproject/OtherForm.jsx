@@ -25,7 +25,7 @@ function OtherForm(){
         <input
           type='text'
           id='medium'
-          placeholder='Location'
+          placeholder='Medium'
           ref={(input) => {_medium = input;}}/>
         <input
           type='text'
