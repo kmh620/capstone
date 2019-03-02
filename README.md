@@ -11,7 +11,7 @@
 ### MVP: 
 * App Homepage with about info, login page
 * User page to add/view/edit projects
-* Separate forms for each category type (painting, sculpture, other) 
+* Separate forms for each category type (painting, sculpture, other)
 * Pricing suggestion based on materials cost per piece, time spent on project, set base price, etc
 * Finished project portfolio view (May be moved to additional features)
 

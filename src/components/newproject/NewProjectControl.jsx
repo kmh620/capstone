@@ -1,4 +1,5 @@
-/*import React from 'react';
+import React from 'react';
+import TypeQuestions from './TypeQuestions';
 
 
 class NewProjectControl extends React.Component {
@@ -14,15 +15,17 @@ class NewProjectControl extends React.Component {
   render(){
   
     /* let renderForm =null;
-    if project = paint, renderForm = PaintForm //
+    if project = paint, renderForm = PaintForm */
     
     
     return (
       <div>
-        {renderForm}
+        <h1>NewProject control Modal</h1>
+        <TypeQuestions/>
+        <hr/>
       </div>
     );
   }
 }
 
-export default NewProjectControl; */
+export default NewProjectControl; 

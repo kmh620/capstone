@@ -19,6 +19,7 @@ var sculptureList = [
   }
 ];
 
+
 function SculptureList(){
   return (
     <div>

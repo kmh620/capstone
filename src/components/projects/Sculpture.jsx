@@ -6,7 +6,11 @@ function Sculpture(props){
 return (
 <div>
   <h3>{props.title} - {props.medium}</h3>
-  <p>{props.notes}</p>
+  <ul>
+    {props.notes.map(function(note, index){
+      return React.createElement('li', {index}, note);
+    })}
+  </ul>
   <hr/>
 </div>
 );
