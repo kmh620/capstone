@@ -1,6 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+
 import About from './About';
 
 const styles = theme => ({
@@ -9,52 +12,66 @@ const styles = theme => ({
   },
   paper: {
     padding: theme.spacing.unit * 2,
-    height: '100%',
+    textAlign: 'center',
     color: theme.palette.text.secondary,
-  },
-  control: {
-    padding: theme.spacing.unit * 2,
   },
 });
 
-function Home() {
+
+function Home(props) {
+  const { classes } = props;
+
 
   return (
-    <Grid container className={styles.root}>
-      <Grid
-        container
-        spacing={16}
-        direction="column"
-        justify="center"
-        alignItems="stretch"
-      >
-        <About/>
+    <div className={classes.root}>
+      <Grid container>
+        <Grid
+          container
+          spacing={16}
+          direction="column"
+          justify="center"
+          alignItems="stretch"
+        >
+          <Paper className={classes.paper}>
+            <About/>
+          </Paper>
+        </Grid>
+        <Grid
+          container
+          spacing={16}
+          direction="column"
+          justify="center"
+          alignItems="stretch"
+        >
+        <Paper className={classes.paper}>
+          <h1>Login</h1>
+        </Paper>
+        </Grid>
+        <Grid
+          container
+          spacing={16}
+          direction="column"
+          justify="center"
+          alignItems="stretch"
+        >
+        <Paper className={classes.paper}>
+          <h1>Sign up</h1>
+        </Paper>
+        </Grid>
       </Grid>
-      <Grid
-        container
-        spacing={16}
-        direction="column"
-        justify="center"
-        alignItems="stretch"
-      >
-        <h1>Login</h1>
-      </Grid>
-      <Grid
-        container
-        spacing={16}
-        direction="column"
-        justify="center"
-        alignItems="stretch"
-      >
-        <h1>Sign up</h1>
-      </Grid>
-    </Grid>
+    </div>
   );
 }
 
+Home.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
 export default withStyles(styles)(Home);
   
-  
+
+
+
   
   
   

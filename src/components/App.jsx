@@ -14,6 +14,7 @@ import { Switch, Route } from 'react-router-dom';
 
 
 
+
 function App() {
 
   
@@ -30,6 +31,7 @@ function App() {
         <Route path='/other-form' component={OtherForm} />
         <Route path='/sculpture-form' component={SculptureForm} />
         <Route path='/paint-form' component={PaintForm} />
+      
       </Switch>
     </div>
   );
