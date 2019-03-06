@@ -1,15 +1,18 @@
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 class TypeQuestions extends React.Component {
   
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       viewMenu: false,
+      selectProject: 'none'
     };
-    this.viewMenu =this.viewMenu.bind(this);
+    this.viewMenu = this.viewMenu.bind(this);
+    this.select = this.select.bind(this);
   }
   
   viewMenu(event) {
@@ -21,6 +24,9 @@ class TypeQuestions extends React.Component {
     }
   }
   
+  select(event) {
+    this.setState({selectProject: event.target.innerText});
+  }
   
   render () {
     return (
@@ -31,9 +37,9 @@ class TypeQuestions extends React.Component {
          
         {this.state.viewMenu ? (
           <div className="menu">
-            <button>Painting </button>
-            <button>Sculpture</button>
-            <button>Other</button>
+            <button onClick={this.select}>Painting</button>
+            <button onClick={this.select}>Sculpture</button>
+            <button onClick={this.select}>Other</button>
           </div> ) : 
           ( null )}
       </div>
@@ -41,5 +47,9 @@ class TypeQuestions extends React.Component {
   
   }
 }
+
+TypeQuestions.propTypes = {
+  onFormSelect: PropTypes.func
+};
 
 export default TypeQuestions;

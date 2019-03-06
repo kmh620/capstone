@@ -11,7 +11,8 @@ const styles = theme => ({
     flexGrow: 1,
   },
   paper: {
-    padding: theme.spacing.unit * 2,
+    padding: theme.spacing.unit * 20,
+    margin: 30,
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
@@ -43,9 +44,9 @@ function Home(props) {
           justify="center"
           alignItems="stretch"
         >
-        <Paper className={classes.paper}>
-          <h1>Login</h1>
-        </Paper>
+          <Paper className={classes.paper}>
+            <h1>Login</h1>
+          </Paper>
         </Grid>
         <Grid
           container
@@ -54,9 +55,9 @@ function Home(props) {
           justify="center"
           alignItems="stretch"
         >
-        <Paper className={classes.paper}>
-          <h1>Sign up</h1>
-        </Paper>
+          <Paper className={classes.paper}>
+            <h1>Sign up</h1>
+          </Paper>
         </Grid>
       </Grid>
     </div>

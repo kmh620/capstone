@@ -16,6 +16,7 @@ function OtherForm(){
 
   return (
     <div>
+      <h1>OTHERR STUFF!!!</h1>
       <form onSubmit={handleOtherFormSubmission}>
         <input
           type='text'

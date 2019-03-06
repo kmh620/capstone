@@ -18,6 +18,7 @@ function PaintForm(props){
 
   return (
     <div>
+      <h1> Painting!!!!</h1>
       <form onSubmit={handlePaintFormSubmission}>
         <input
           type='text'
