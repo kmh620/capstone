@@ -25,11 +25,11 @@
 * [Video: React Landing page design](https://www.youtube.com/watch?v=n8iA18R76jk)
 
 * Material UI:
-    * <Table/> - for supplies lists
-    * <Grid/> && <Dividers/>
-    * <Lists/>
-    * <Form etc... />
-    * <Drawer/> && <MenuList/>
-    * <Modal/> - for form pop up?
+    * Table/> - for supplies lists
+    * Grid/> && Dividers/>
+    * Lists/>
+    * Form etc... />
+    * Drawer/> && MenuList/>
+    * Modal/> - for form pop up?
     
 

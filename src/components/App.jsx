@@ -1,6 +1,7 @@
 import React from 'react';
-import Main from './Main';
+
 import Header from './Header';
+import Home from './Home';
 
 import User from './User';
 import OtherList from './projects/OtherList';
@@ -18,15 +19,17 @@ function App() {
   
   return (
     <div>
-    <Header/>
+      <Header/>
+      <br/>
       <Switch>
-        <Route exact path='/' component={Main} />
+        <Route exact path='/' component={Home} />
         <Route path='/userpage' component={User} />
         <Route path='/other-projects' component={OtherList} />
         <Route path='/painting-projects' component={PaintList} />
         <Route path='/sculpture-projects' component={SculptureList} />
         <Route path='/other-form' component={OtherForm} />
         <Route path='/sculpture-form' component={SculptureForm} />
+        <Route path='/paint-form' component={PaintForm} />
       </Switch>
     </div>
   );
