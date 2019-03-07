@@ -39,13 +39,13 @@ class NewProjectControl extends React.Component {
     super(props);
     this.state = {
       open: false,
-      projectForm: "none"
+      projectForm: 'none'
     };
     this.handleOpen = this.handleOpen.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.handleFormSelect = this.handleFormSelect.bind(this);
   }
-  
+
   handleOpen() {
     this.setState({ open: true });
   }
@@ -53,11 +53,11 @@ class NewProjectControl extends React.Component {
   handleClose() {
     this.setState({ open: false });
   }
-  
+
   handleFormSelect(){
-    console.log('Form SElect!');
-    /*if
     
+    /*if
+
     this.setState({projectForm: "paint"});
     this.setState({projectForm: "sculpt"});
     this.setState({projectForm: "other"});*/
@@ -67,24 +67,24 @@ class NewProjectControl extends React.Component {
     const { classes } = this.props;
     let currentlyVisibleContent = null;
 
-    if (this.state.projectForm === "paint"){
+    if (this.state.projectForm === 'paint'){
       currentlyVisibleContent = <PaintForm/>;
-    } else if(this.state.projectForm === "sculpt"){
-      currentlyVisibleContent = <SculptureForm/>
-    } else if(this.state.projectForm === "other") {
-      currentlyVisibleContent = <OtherForm/>
+    } else if(this.state.projectForm === 'sculpt'){
+      currentlyVisibleContent = <SculptureForm/>;
+    } else if(this.state.projectForm === 'other') {
+      currentlyVisibleContent = <OtherForm/>;
     } else {
-      currentlyVisibleContent = 
+      currentlyVisibleContent =
         <div>
           <Typography variant="h6" id="modal-title">
         Choose Project Type:
           </Typography>
           <TypeQuestions onFormSelect={this.handleFormSelect}/>
-        </div>
-    };
-   
-   
-   
+        </div>;
+    }
+
+
+
     return (
       <div>
         <Typography gutterBottom>Add a New Project</Typography>
@@ -99,7 +99,7 @@ class NewProjectControl extends React.Component {
             {currentlyVisibleContent}
           </div>
         </Modal>
-        
+
         <hr/>
       </div>
     );
@@ -110,4 +110,4 @@ NewProjectControl.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(NewProjectControl); 
+export default withStyles(styles)(NewProjectControl);
