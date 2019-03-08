@@ -2,7 +2,7 @@
 import React from 'react';
 
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+
 
 import Button from '@material-ui/core/Button';
 
@@ -14,6 +14,10 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+
+import unfinished from '../../../src/assets/img/project-img/unfinished-portrait-becky-kim.png';
+/*import dogPainting from '../../src/assets/img/project-img/dogs-pat-saunders-white.jpg.png';
+import watercolor from '../../src/assets/img/project-img/watercolor.jpeg';*/
 
 const styles = theme => ({
   appBar: {
@@ -67,16 +71,19 @@ const styles = theme => ({
 var paintingList = [
   {
     title: 'Untitled 1',
+    mainImage: unfinished,
     medium: 'Acrylic on paper',
     notes: ['Add piece to Series A ??']
   },
   {
     title: 'Painting of dogs',
+    mainImage: unfinished,
     medium: 'Oil on canvas',
     notes: ['Cute dogs, get more dogs!', 'Ran out of blue paint...']
   },
   {
     title: 'Another painting',
+    mainImage: unfinished,
     medium: 'Watercolor',
     notes: ['Too wet, don\'t use so much water next time!', 'Add a dog to this piece?']
   }
@@ -88,50 +95,23 @@ function ProjectTypeList(props){
 
   return (
     <div>
-
-    /*  <div className={classes.heroUnit}>
-        <div className={classes.heroContent}>
-          <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                 Album layout
-          </Typography>
-          <Typography variant="h6" align="center" color="textSecondary" paragraph>
-                 Something short and leading about the collection below—its contents, the creator, etc.
-                 Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-                 entirely.
-          </Typography>
-          <div className={classes.heroButtons}>
-            <Grid container spacing={16} justify="center">
-              <Grid item>
-                <Button variant="contained" color="primary">
-                       Main call to action
-                </Button>
-              </Grid>
-              <Grid item>
-                <Button variant="outlined" color="primary">
-                       Secondary action
-                </Button>
-              </Grid>
-            </Grid>
-          </div>
-        </div>
-      </div>
-      <div className={classNames(classes.layout, classes.cardGrid)}>
-        {/* End hero unit */}
+      <div>
         <Grid container spacing={40}>
           {paintingList.map(painting => (
             <Grid item key={painting} sm={6} md={4} lg={3}>
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
-                  image=" "
+                  height="150"
+                  image={painting.mainImage}
                   title="Image title"
                 />
                 <CardContent className={classes.cardContent}>
                   <Typography gutterBottom variant="h5" component="h2">
-                         Heading
+                    {painting.title}
                   </Typography>
                   <Typography>
-                         This is a media card. You can use this section to describe the content.
+                    {painting.medium}
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -146,7 +126,7 @@ function ProjectTypeList(props){
             </Grid>
           ))}
         </Grid>
-      </div>*/
+      </div>
 
 
     </div>

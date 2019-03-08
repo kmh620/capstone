@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 
@@ -10,7 +10,7 @@ function ProjectForm(props) {
 
   function handleNewFormSubmission(event) {
     event.preventDefault();
-    props.onNewActorCreation({title: _title.value, medium: _medium.value, size: _size.value, id: v4()});
+    props.onNewProjectCreation({title: _title.value, medium: _medium.value, size: _size.value, id: v4()});
     _title.value = '';
     _medium.value = '';
     _size.value = '';
@@ -28,4 +28,6 @@ function ProjectForm(props) {
     </div>
   );
 
-  export default ProjectForm;
+}
+
+export default ProjectForm;*/
