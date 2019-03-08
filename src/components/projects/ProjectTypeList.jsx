@@ -15,9 +15,9 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 
-import unfinished from '../../../src/assets/img/project-img/unfinished-portrait-becky-kim.png';
-/*import dogPainting from '../../src/assets/img/project-img/dogs-pat-saunders-white.jpg.png';
-import watercolor from '../../src/assets/img/project-img/watercolor.jpeg';*/
+import unfinished from '../../assets/images/project-img/unfinished-portrait-becky-kim.jpg';
+import dogPainting from '../../assets/images/project-img/dogs-pat-saunders-white.jpg';
+import watercolor from '../../assets/images/project-img/watercolor.jpeg';
 
 const styles = theme => ({
   appBar: {
@@ -77,13 +77,13 @@ var paintingList = [
   },
   {
     title: 'Painting of dogs',
-    mainImage: unfinished,
+    mainImage: dogPainting,
     medium: 'Oil on canvas',
     notes: ['Cute dogs, get more dogs!', 'Ran out of blue paint...']
   },
   {
     title: 'Another painting',
-    mainImage: unfinished,
+    mainImage: watercolor,
     medium: 'Watercolor',
     notes: ['Too wet, don\'t use so much water next time!', 'Add a dog to this piece?']
   }
