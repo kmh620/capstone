@@ -26,7 +26,6 @@ class TypeQuestions extends React.Component {
 
   select(event) {
     this.setState({selectProject: event.target.value});
-    console.log(event.target.value);
   }
 
   render () {
