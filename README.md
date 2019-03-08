@@ -1,7 +1,7 @@
 # Capstone Project
 
 #### App for artists/creators to record information about their projects.
-#### 03/01/2019
+#### 03/08/2019
 
 
 #### By Katrina Hockman
@@ -50,7 +50,7 @@
 
 ## Technologies Used
 
-Javascript, webpack's, CSS,React
+Javascript, webpack, CSS, React
 
 ### License
 
