@@ -1,7 +1,6 @@
 
 import React from 'react';
 import PaintList from './PaintList';
-import SculptureList from './SculptureList';
 import OtherList from './OtherList';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -76,10 +75,6 @@ function ProjectTypeList(){
         <PaintList/>
       </div>
 
-      <div>
-        <h2>sculpture</h2>
-        <SculptureList/>
-      </div>
       <div>
         <h2>Other</h2>
         <OtherList/>

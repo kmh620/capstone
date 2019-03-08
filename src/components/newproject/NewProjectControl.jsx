@@ -1,7 +1,6 @@
 import React from 'react';
 import TypeQuestions from './TypeQuestions';
 import PaintForm from './PaintForm';
-import SculptureForm from './SculptureForm';
 import OtherForm from './OtherForm';
 
 import PropTypes from 'prop-types';
@@ -55,11 +54,11 @@ class NewProjectControl extends React.Component {
   }
 
   handleFormSelect(){
-    
+
     /*if
 
     this.setState({projectForm: "paint"});
-    this.setState({projectForm: "sculpt"});
+
     this.setState({projectForm: "other"});*/
   }
 
@@ -69,8 +68,6 @@ class NewProjectControl extends React.Component {
 
     if (this.state.projectForm === 'paint'){
       currentlyVisibleContent = <PaintForm/>;
-    } else if(this.state.projectForm === 'sculpt'){
-      currentlyVisibleContent = <SculptureForm/>;
     } else if(this.state.projectForm === 'other') {
       currentlyVisibleContent = <OtherForm/>;
     } else {

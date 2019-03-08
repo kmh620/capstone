@@ -59,7 +59,7 @@ export default TypeQuestions;
     {this.state.viewMenu ? (
       <div className="menu">
         <button onClick={this.onFormSelect}>Painting</button>
-        <button onClick={this.onFormSelect}>Sculpture</button>
+      
         <button onClick={this.onFormSelect}>Other</button>
       </div> ) :
       ( null )}*/
