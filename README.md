@@ -1,6 +1,6 @@
 # Capstone Project
 
-#### App for artists/creators to record information about their projects. 
+#### App for artists/creators to record information about their projects.
 #### 03/01/2019
 
 
@@ -8,7 +8,7 @@
 
 ## Description
 
-### MVP: 
+### MVP:
 * App Homepage with about info, login page
 * User page to add/view/edit projects
 * Separate forms for each category type (painting, sculpture, other)
@@ -17,6 +17,10 @@
 
 #### MVP Component Tree:
 ![alt text](src/assets/img/CapstoneMVPComponents.png "MVP Components")
+
+### MVP site layout
+
+![alt text](src/assets/img/CapstoneLayout1.png "MVP web layout")
 
 ### Tools:
  React and Redux will be used.
@@ -31,7 +35,7 @@
 #### UI State
  * Material UI components for menus, hide& show information
  * Projects will have 'complete' status boolean
- 
+
 
 
 ## Known Bugs
@@ -52,6 +56,3 @@ Javascript, webpack's, CSS,React
 This software is licensed under the MIT license.
 
 Copyright (c) 2019 **Katrina Hockman**
-
-
-
