@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 
 class TypeQuestions extends React.Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +14,7 @@ class TypeQuestions extends React.Component {
     this.viewMenu = this.viewMenu.bind(this);
     this.select = this.select.bind(this);
   }
-  
+
   viewMenu(event) {
     event.preventDefault();
     if (this.state.viewMenu === false){
@@ -23,28 +23,26 @@ class TypeQuestions extends React.Component {
       this.setState({viewMenu: false});
     }
   }
-  
+
   select(event) {
-    this.setState({selectProject: event.target.innerText});
+    this.setState({selectProject: event.target.value});
+    console.log(event.target.value);
   }
-  
+
   render () {
     return (
       <div>
-        <button onClick={this.viewMenu}>
-          Select Type:
-        </button>
-         
-        {this.state.viewMenu ? (
-          <div className="menu">
-            <button onClick={this.select}>Painting</button>
-            <button onClick={this.select}>Sculpture</button>
-            <button onClick={this.select}>Other</button>
-          </div> ) : 
-          ( null )}
+        <select defaultValue={this.state.selectProject}
+          onChange={this.select}
+        >
+          <option>Select:</option>
+          <option value="Painting">Painting</option>
+          <option value="Other">Other</option>
+        </select>
+        <p></p>
       </div>
     );
-  
+
   }
 }
 
@@ -53,3 +51,16 @@ TypeQuestions.propTypes = {
 };
 
 export default TypeQuestions;
+
+
+/*    <button onClick={this.viewMenu}>
+      Select Type:
+    </button>
+
+    {this.state.viewMenu ? (
+      <div className="menu">
+        <button onClick={this.onFormSelect}>Painting</button>
+        <button onClick={this.onFormSelect}>Sculpture</button>
+        <button onClick={this.onFormSelect}>Other</button>
+      </div> ) :
+      ( null )}*/
