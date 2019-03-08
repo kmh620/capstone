@@ -1,6 +1,7 @@
 import React from 'react';
 import Painting from './Painting';
 
+
 var paintingList = [
   {
     title: 'Untitled 1',
@@ -18,6 +19,8 @@ var paintingList = [
     notes: ['Too wet, don\'t use so much water next time!', 'Add a dog to this piece?']
   }
 ];
+
+
 
 function PaintList(){
   return (
