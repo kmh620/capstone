@@ -33,8 +33,9 @@
 • API ? (supplies brand or store that could be integrated into a search option in the project form.)
 
 #### UI State
- * Material UI components for menus, hide& show information
+ * Material UI components for menus, hide & show information
  * Projects will have 'complete' status boolean
+ * Redux app state as possible refactor  to incorporate firebase (after MVP?)
 
 
 

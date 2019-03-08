@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 
-function Form(props) {
+function ProjectForm(props) {
   let _title = null;
   let _medium = null;
   let _size = null;
@@ -27,3 +27,5 @@ function Form(props) {
       </form>
     </div>
   );
+
+  export default ProjectForm;
