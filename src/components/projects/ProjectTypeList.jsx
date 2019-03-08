@@ -1,19 +1,17 @@
 
 import React from 'react';
-import PaintList from './PaintList';
-import OtherList from './OtherList';
+
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import AppBar from '@material-ui/core/AppBar';
+
 import Button from '@material-ui/core/Button';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
+
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
+
 import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 
@@ -64,13 +62,34 @@ const styles = theme => ({
     padding: theme.spacing.unit * 6,
   },
 });
-function ProjectTypeList(){
+
+
+var paintingList = [
+  {
+    title: 'Untitled 1',
+    medium: 'Acrylic on paper',
+    notes: ['Add piece to Series A ??']
+  },
+  {
+    title: 'Painting of dogs',
+    medium: 'Oil on canvas',
+    notes: ['Cute dogs, get more dogs!', 'Ran out of blue paint...']
+  },
+  {
+    title: 'Another painting',
+    medium: 'Watercolor',
+    notes: ['Too wet, don\'t use so much water next time!', 'Add a dog to this piece?']
+  }
+];
+
+
+function ProjectTypeList(props){
   const { classes } = props;
 
   return (
     <div>
 
-      <div className={classes.heroUnit}>
+    /*  <div className={classes.heroUnit}>
         <div className={classes.heroContent}>
           <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
                  Album layout
@@ -127,11 +146,14 @@ function ProjectTypeList(){
             </Grid>
           ))}
         </Grid>
-      </div>
+      </div>*/
 
 
     </div>
   );
 }
 
-export default ProjectTypeList;
+ProjectTypeList.propTypes = {
+  classes: PropTypes.object
+};
+export default withStyles(styles)(ProjectTypeList);
