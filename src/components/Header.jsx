@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import Image from '../assets/images/project-img/banner.jpg';
 
 
 const styles = theme => ({
@@ -16,6 +17,8 @@ const styles = theme => ({
     margin: 10,
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    backgroundImage: `url(${Image})`,
+    opacity: .8
   },
 });
 
@@ -36,7 +39,7 @@ function Header(props){
           alignItems="stretch"
         >
           <Paper className={classes.paper}>
-            <h1>Header</h1>
+            <h1>Project Tracker</h1>
           </Paper>
         </Grid>
       </Grid>

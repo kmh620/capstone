@@ -15,10 +15,11 @@
 * reference photos?
 * Main image and detail image option/history images
 * Autofill form for series?
+* Model info section (ie buyer info)
 
 * [Video: art supply inventory- for pricing component?](https://www.youtube.com/watch?v=IooOXXAa3DU)
 
-* add swatches to painting info 
+* add swatches to painting info
 
 * [Video: Create login/register page](https://www.youtube.com/watch?v=OWYxMCfcTbY)
 
@@ -31,5 +32,3 @@
     * Form etc... />
     * Drawer/> && MenuList/>
     * Modal/> - for form pop up?
-    
-

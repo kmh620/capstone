@@ -18,6 +18,8 @@ import { withStyles } from '@material-ui/core/styles';
 import unfinished from '../../assets/images/project-img/unfinished-portrait-becky-kim.jpg';
 import dogPainting from '../../assets/images/project-img/dogs-pat-saunders-white.jpg';
 import watercolor from '../../assets/images/project-img/watercolor.jpeg';
+import blanket from '../../assets/images/project-img/blanket.jpeg';
+import photo from '../../assets/images/project-img/photo.jpeg';
 
 const styles = theme => ({
   appBar: {
@@ -68,7 +70,7 @@ const styles = theme => ({
 });
 
 
-var paintingList = [
+var projectList = [
   {
     title: 'Untitled 1',
     mainImage: unfinished,
@@ -86,6 +88,18 @@ var paintingList = [
     mainImage: watercolor,
     medium: 'Watercolor',
     notes: ['Too wet, don\'t use so much water next time!', 'Add a dog to this piece?']
+  },
+  {
+    title: 'Blanket',
+    mainImage: blanket,
+    medium: 'yarn',
+    notes: ['this is gonna be soo warm', 'Ask Grandma for help']
+  },
+  {
+    title: 'Photo 1',
+    mainImage: photo,
+    medium: 'Photography',
+    notes: []
   }
 ];
 
@@ -97,21 +111,21 @@ function ProjectTypeList(props){
     <div>
       <div>
         <Grid container spacing={40}>
-          {paintingList.map(painting => (
-            <Grid item key={painting} sm={6} md={4} lg={3}>
+          {projectList.map(project => (
+            <Grid item key={project} sm={6} md={4} lg={3}>
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
                   height="150"
-                  image={painting.mainImage}
+                  image={project.mainImage}
                   title="Image title"
                 />
                 <CardContent className={classes.cardContent}>
                   <Typography gutterBottom variant="h5" component="h2">
-                    {painting.title}
+                    {project.title}
                   </Typography>
                   <Typography>
-                    {painting.medium}
+                    {project.medium}
                   </Typography>
                 </CardContent>
                 <CardActions>
