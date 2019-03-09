@@ -13,7 +13,7 @@
 * User page to add/view/edit projects
 * Separate forms for each category type (painting, sculpture, other)
 * Pricing suggestion based on materials cost per piece, time spent on project, set base price, etc
-* Finished project portfolio view (May be moved to additional features)
+
 
 #### MVP Component Tree:
 ![alt text](src/assets/img/CapstoneMVPComponents.png "MVP Components")
@@ -30,12 +30,14 @@
 • Mobile app option to take pictures of receipts, scan QR codes/ barcodes of products
 • Connect with other users for collaborations, etc.
 • Recording buyer information/ selling platforms
+• Record model info
 • API ? (supplies brand or store that could be integrated into a search option in the project form.)
+• Finished project portfolio view
 
 #### UI State
  * Material UI components for menus, hide & show information
  * Projects will have 'complete' status boolean
- * Redux app state as possible refactor  to incorporate firebase (after MVP?)
+ * Redux app state as possible refactor to incorporate firebase (after MVP?)
 
 
 
@@ -46,6 +48,8 @@
 
 * Clone repository
 * Run npm install from terminal
+* Run npm run start from terminal
+* Visit localhost:8080 to view
 
 
 ## Technologies Used
