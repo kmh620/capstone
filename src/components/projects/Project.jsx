@@ -9,18 +9,15 @@ class Project extends Component {
       complete: false
     } ;
   }
-  
-  
-  
-  
 
-  
-  
+
+
   render() {
+
     return (
       <div>
-      
-      
+
+        <hr/>
       </div>
     );
   }
@@ -29,7 +26,10 @@ class Project extends Component {
 
 Project.propTypes = {
   type: PropTypes.string,
-  complete: PropTypes.bool
+  complete: PropTypes.bool,
+  title: PropTypes.string,
+  medium: PropTypes.string,
+  notes: PropTypes.array
 };
 
 export default Project;

@@ -8,7 +8,7 @@ class LoginBox extends React.Component {
     this.state = {};
   }
 
-  submitLogin(e) {}
+  submitLogin() {}
 
   render() {
     return (

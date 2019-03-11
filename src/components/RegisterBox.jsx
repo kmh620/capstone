@@ -8,7 +8,7 @@ class RegisterBox extends React.Component {
     this.state = {};
   }
 
-  submitRegister(e) {}
+  submitRegister() {}
 
   render() {
     return (

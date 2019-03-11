@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Home from './Home';
 import User from './User';
+import ProjectDetail from './projects/ProjectDetail';
 import { Switch, Route } from 'react-router-dom';
 
 
@@ -26,6 +27,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/userpage' component={User} />
+          <Route path='/project-detail' component={ProjectDetail} />
         </Switch>
       </div>
     );
