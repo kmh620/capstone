@@ -1,35 +1,39 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class Project extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      type: null,
-      complete: false
-    } ;
-  }
+function Project(props) {
 
-
-
-  render() {
-
+  const projectInfo =
+    <div>
+      <h3>{props.title} - {props.medium}</h3>
+      <h4>{props.notes}</h4>
+      <hr/>
+    </div>;
+  if (props.currentRouterPath === '/userpage'){
+    return (
+      <div onClick={() => {props.onProjectSelection(props.projectId);}}>
+        {projectInfo}
+      </div>
+    );
+  } else {
     return (
       <div>
-
-        <hr/>
+        {projectInfo}
       </div>
     );
   }
-
 }
+
 
 Project.propTypes = {
   type: PropTypes.string,
   complete: PropTypes.bool,
   title: PropTypes.string,
   medium: PropTypes.string,
-  notes: PropTypes.array
+  notes: PropTypes.array,
+  currentRouterPath: PropTypes.string,
+  onProjectSelection: PropTypes.func,
+  projectId: PropTypes.string.isRequired
 };
 
 export default Project;

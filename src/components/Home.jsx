@@ -16,6 +16,7 @@ const styles = theme => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
+  
 });
 
 
@@ -25,6 +26,19 @@ function Home(props) {
 
   return (
     <div className={classes.root}>
+      <Grid container>
+        <Grid
+          container
+          spacing={16}
+          direction="column"
+          justify="center"
+          alignItems="stretch"
+        >
+          <Paper className={classes.paper}>
+            <h1>App Name</h1>
+          </Paper>
+        </Grid>
+      </Grid>
       <Grid container>
         <Grid
           container
@@ -69,16 +83,3 @@ Home.propTypes = {
 };
 
 export default withStyles(styles)(Home);
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
