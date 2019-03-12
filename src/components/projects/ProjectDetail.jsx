@@ -9,7 +9,6 @@ function ProjectDetail(props){
       <h3>Project Detail</h3>
       <hr/>
       <h1>{props.selectedProject.title} - {props.selectedProject.medium}</h1>
-      <p>{props.selectedProject.notes}</p>
       <hr/>
 
     </div>
@@ -17,7 +16,7 @@ function ProjectDetail(props){
 }
 
 ProjectDetail.propTypes = {
-  selectedProject: PropTypes.object
+  selectedProject: PropTypes.string
 };
 
 export default ProjectDetail;
