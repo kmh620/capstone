@@ -7,7 +7,7 @@ function Header(){
 
   return (
     <div>
-      <Link to="/">Home</Link> | <Link to="/userpage">User</Link> | <Link to="/">Project</Link>  | <Link to="/other-form">New Form</Link>
+      <Link to="/">Home</Link> | <Link to="/userpage">User</Link>  | <Link to="/other-form">New Form</Link>
     </div>
   );
 }
