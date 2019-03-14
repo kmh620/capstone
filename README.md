@@ -1,14 +1,14 @@
 # Capstone Project
 
 #### App for artists/creators to record information about their projects.
-#### 03/08/2019
+#### 03/14/2019
 
 
 #### By Katrina Hockman
 
 ## Description
 
-### MVP:
+### MVP Goal:
 * App Homepage with about info, login page
 * User page to add/view/edit projects
 * Separate forms for each category type (painting, sculpture, other)
@@ -23,9 +23,9 @@
 ![alt text](src/assets/img/CapstoneLayout1.png "MVP web layout")
 
 ### Tools:
- React and Redux will be used.
+ React
 
-### Additional Features:
+### Additional Future Features:
 • More categories & forms (Photography, crafts, video, performance, etc)
 • Mobile app option to take pictures of receipts, scan QR codes/ barcodes of products
 • Connect with other users for collaborations, etc.
@@ -54,7 +54,7 @@
 
 ## Technologies Used
 
-Javascript, webpack, CSS, React
+Javascript, webpack, CSS, React, Material-UI
 
 ### License
 

@@ -36,6 +36,12 @@ class TypeQuestions extends React.Component {
         >
           <option>Select:</option>
           <option value="Painting">Painting</option>
+          <option value="Other">Sculpture</option>
+          <option value="Other">Photography</option>
+          <option value="Other">Performance</option>
+          <option value="Other">Digital</option>
+          <option value="Other">Video</option>
+          <option value="Other">Craft</option>
           <option value="Other">Other</option>
         </select>
         <p></p>
@@ -59,7 +65,7 @@ export default TypeQuestions;
     {this.state.viewMenu ? (
       <div className="menu">
         <button onClick={this.onFormSelect}>Painting</button>
-      
+
         <button onClick={this.onFormSelect}>Other</button>
       </div> ) :
       ( null )}*/
